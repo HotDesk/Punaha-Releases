@@ -1,26 +1,33 @@
 # Verify a Pūnaha download
 
-The RC1 installer release is currently a draft. These instructions describe verification of an authorised copy and the intended public downloads once release checks are complete.
+Use these instructions for the RC1 `rebuild-20261007` downloads from the official release page. These are evaluation packages; signature verification does not establish production acceptance.
 
 ## 1. Select the complete platform archive
 
-Obtain the appropriate named installer archive and `SHA256SUMS.txt` from the same official release in `HotDesk/Punaha-Releases`. Do not select GitHub's automatic **Source code** archives: they contain release documentation only.
+Obtain the appropriate named installer archive and `SHA256SUMS-rebuild-20261007.txt` from the same official release in `HotDesk/Punaha-Releases`. Do not select GitHub's automatic **Source code** archives: they contain release documentation only.
 
 On Windows, calculate the ZIP hash:
 
 ```powershell
-Get-FileHash -LiteralPath .\punaha-0.1.0-rc.1-terms-v2-windows-amd64.zip -Algorithm SHA256
+Get-FileHash -LiteralPath .\punaha-0.1.0-rc.1-rebuild-20261007-windows-amd64.zip -Algorithm SHA256
 ```
 
-Compare every hexadecimal character with the matching line in `SHA256SUMS.txt`. On Linux, from the directory containing the selected archive and checksums, use:
+Compare every hexadecimal character with the matching line in `SHA256SUMS-rebuild-20261007.txt`. On Linux, from the directory containing the selected archive and checksums, use:
 
 ```bash
-sha256sum --check --ignore-missing SHA256SUMS.txt
+sha256sum --check --ignore-missing SHA256SUMS-rebuild-20261007.txt
 ```
 
 Confirm that your downloaded archive is listed as `OK`. Files for other platforms may be absent. A checksum mismatch means that the download must not be installed.
 
-The outer archives and checksum file are not separately signed. Checksums detect a mismatch with the published reference; they do not independently authenticate the publisher. Continue with the signed inner manifest and approved certificate below.
+The archives, checksum list and release-details JSON each have a matching `.sig` asset signed with the release certificate. Independently approve the certificate fingerprint below before relying on it. On Linux, use trusted OpenSSL tools to verify a downloaded file (substitute its exact name for FILE):
+
+```bash
+openssl x509 -inform DER -in punaha-release-signing.cer -pubkey -noout > release-public.pem
+openssl dgst -sha256 -verify release-public.pem -signature FILE.sig FILE
+```
+
+Check the DER certificate hash before extracting its public key. Continue with the exact signed inner inventory after extracting the archive.
 
 ## 2. Extract without modifying the platform folder
 
@@ -35,7 +42,7 @@ Before using a supplied helper, IT must independently approve the expected certi
 | Windows publisher | `11a90675305b50a3bdca95ab8f86a821658d527d21903d81e30c873c67291275` |
 | Release manifests | `7f76f8e1af2fed2a5098f3f78443be95b77d4b39d1d84cbd70cd84ba29cb84b5` |
 
-Read the extracted platform's `INSTALL.md` for its trust preparation, verification commands and installation procedure. The manifest uses RSA-SHA256 and covers every other bundle file except its detached signature. The Windows installer is also Authenticode signed and timestamped. The RPM has no native OpenPGP signature; its detached signed manifest does not replace an organisation's RPM repository-signing policy.
+Read the extracted platform's `INSTALL.md` for its trust preparation, verification commands and installation procedure. The manifest uses RSA-SHA256 and covers every other bundle file except its detached signature. The Windows installer is also Authenticode signed and timestamped. The Linux DEB/RPM and standalone executables also have detached RSA-SHA256 signatures. The RPM has no native OpenPGP signature; detached RSA signatures do not replace an organisation's RPM repository-signing policy.
 
 Do not bypass operating-system, certificate or endpoint security policies to run a candidate. Certificate enrolment is a persistent administrative change and requires the organisation's approved process. The supplied certificates expire in September 2028; future verification requires current approved material and applicable timestamp/trust checks.
 

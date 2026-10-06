@@ -1,62 +1,149 @@
 {
-  "schema": "punaha-release-downloads/v1",
+  "schema": "punaha-release-downloads/v2",
   "releaseTag": "v0.1.0-rc.1-terms-v2",
   "productVersion": "0.1.0-rc.1",
-  "candidateRevision": "terms-v2",
+  "candidateRevision": "rebuild-20261007",
   "legalVersion": "rc1-20261006-v2",
   "privacyVersion": "rc1-20261006-v1",
-  "productSourceCommit": "decfd63165046095b38c2062725a89edd268ab35",
-  "supportSourceCommit": "21a8352e1bb86980a46739159bb3633026238685",
-  "supportDeploymentAccepted": false,
-  "statusAtPreparation": "draft; public distribution blocked pending redistribution and release acceptance",
-  "preparedAtUtc": "2026-10-06T01:49:04.405741+00:00",
-  "archivePolicy": "Complete platform folder; original file bytes unchanged; archive names identify distro and legal revision.",
-  "tagScope": "The public repository tag identifies release documentation, not the private application source commit.",
-  "authentication": "Archives and SHA256SUMS are not separately signed. Each archive contains an RSA-SHA256 signed manifest covering every other inner file.",
+  "productSourceCommit": "b7491731373a210528a3719b8b5f86648e108868",
+  "status": "signed evaluation candidate; package and runtime checks passed; full installation lifecycle and production acceptance outstanding",
+  "preparedAtUtc": "2026-10-06T23:06:35.1871190Z",
+  "registrationAvailableInRC1": false,
+  "registrationAvailability": "first production version",
+  "allowance": "720 TPM powered-on hours after first-time setup",
+  "archivePolicy": "Complete signed platform folder; every file verified before compression; public certificates only",
+  "tagScope": "Public tag identifies release documentation, not private application source; this dated revision identifies replacement artifacts",
+  "authentication": "RSA-SHA256 detached signatures for archives, checksums, release details, platform packages and executables; signed payload and release inventories; Windows Authenticode with RFC 3161 timestamps and retained valid vendor signatures",
+  "releaseCertificateSha256": "7f76f8e1af2fed2a5098f3f78443be95b77d4b39d1d84cbd70cd84ba29cb84b5",
+  "windowsPublisherCertificateSha256": "11a90675305b50a3bdca95ab8f86a821658d527d21903d81e30c873c67291275",
   "assets": [
     {
       "platform": "Windows",
-      "name": "punaha-0.1.0-rc.1-terms-v2-windows-amd64.zip",
-      "size": 268114088,
-      "sha256": "71ff8d133792d3a07c85b73d6a7bd239ee2c407097a7eef7d8f9e679f1050e84",
-      "manifestSha256": "6ba1740ec5225aac1771a8df931c84ffa3e34b52f31cfae8ad85ea0da677075c",
-      "signedFilesVerified": 2842,
-      "totalFiles": 2844,
-      "signedManifestVerified": true,
-      "exactArchiveInventoryVerified": true
+      "name": "punaha-0.1.0-rc.1-rebuild-20261007-windows-amd64.zip",
+      "size": 247138278,
+      "sha256": "9ad8bab4cb0e63df7f0d90acac47df9037a13284002a4ee7b143c16809174485",
+      "files": 2853
     },
     {
       "platform": "Ubuntu",
-      "name": "punaha-0.1.0-rc.1-terms-v2-ubuntu-amd64.tar.gz",
-      "size": 146709960,
-      "sha256": "231c253e72ec6f7a8c198aa69b2a87c21aa77b175007edac4a5dff4fa21f0856",
-      "manifestSha256": "910bc47e50031a088d256e7a46e4ca4b13c387f2fbdd771f45ac0079169fb5c9",
-      "signedFilesVerified": 2842,
-      "totalFiles": 2844,
-      "signedManifestVerified": true,
-      "exactArchiveInventoryVerified": true
+      "name": "punaha-0.1.0-rc.1-rebuild-20261007-ubuntu-amd64.tar.gz",
+      "size": 148602644,
+      "sha256": "8450f7555e86349630bf1be93b0b5b705809d6a5c490b742912bbd7d7faeb631",
+      "files": 2853
     },
     {
       "platform": "Debian13",
-      "name": "punaha-0.1.0-rc.1-terms-v2-debian13-amd64.tar.gz",
-      "size": 146707057,
-      "sha256": "15779ced3aa52e73a9fd060813244b7b513ca7dcd97f87204b9459403d121548",
-      "manifestSha256": "10c8858fc4718227a7f8acd5414a58b076276435fb9c69f2c8c61f01d722cf8f",
-      "signedFilesVerified": 2842,
-      "totalFiles": 2844,
-      "signedManifestVerified": true,
-      "exactArchiveInventoryVerified": true
+      "name": "punaha-0.1.0-rc.1-rebuild-20261007-debian13-amd64.tar.gz",
+      "size": 148597283,
+      "sha256": "d1b9222b08e0eefb35d68142e1b1663685fbb8253705e8e430ebd248a5aae693",
+      "files": 2853
     },
     {
       "platform": "RHEL9",
-      "name": "punaha-0.1.0-rc.1-terms-v2-rhel9-x86_64.tar.gz",
-      "size": 166268119,
-      "sha256": "80b59df5099e08ad270daee8aaba5bf3a228f8e6c69b9d095fdee55163f13fd2",
-      "manifestSha256": "b7e349eedf2dd8e0b97cdcd828330e02dec223d16610306aaf3553faef10fd14",
-      "signedFilesVerified": 2842,
-      "totalFiles": 2844,
-      "signedManifestVerified": true,
-      "exactArchiveInventoryVerified": true
+      "name": "punaha-0.1.0-rc.1-rebuild-20261007-rhel9-x86_64.tar.gz",
+      "size": 168179933,
+      "sha256": "5e776475ee463c115337ce89cf18306172821e4507f59b8ceac1e08eb9912166",
+      "files": 2853
     }
-  ]
+  ],
+  "validation": {
+    "schema": "punaha-rc1-rebuild-validation/v1",
+    "candidateRevision": "rebuild-20261007",
+    "productVersion": "0.1.0-rc.1",
+    "sourceCommit": "b7491731373a210528a3719b8b5f86648e108868",
+    "date": "2026-10-07",
+    "status": "package-and-runtime-checks-passed",
+    "windows": {
+      "signedPayloadFiles": 2943,
+      "independentlyVerifiedPublisherPEAndMSIFiles": 75,
+      "validVendorComponents": 25,
+      "installerHelperMatchesSignedBuild": true,
+      "runtimePermissionCandidateAndExtractedGates": "passed",
+      "defaultProgramDirectory": "Program Files/Punaha",
+      "intelSYCLRuntimePath": "ASCII-only; unsupported paths rejected before native loading"
+    },
+    "linux": {
+      "payloadInventories": "RSA-SHA256 authenticated; extracted bytes and POSIX modes verified",
+      "packageSignatures": "detached RSA-SHA256",
+      "nativeRPMSignature": false,
+      "dependencyChecks": "package relationships resolve on tested environments; Ubuntu tpm-udev must be installed or cached before offline installation",
+      "debianAndRhelMissingAcceptanceAndTPMRejection": "passed"
+    },
+    "nativeDependencyPolicy": "passed for packaged inference and embedded vector runtimes",
+    "thirdPartyNoticeHashEntries": 1213,
+    "licenceSHA256": "8990e5a073e8e518adbbaa254f13bfcf02ee3972c7b349c045fde56b3a803115",
+    "privacySHA256": "4581ace31a2c720718cea400019d858d53dfd7c74dc2bd41386981aed96503ce",
+    "registrationAvailableInRC1": false,
+    "normalUseAllowance": "720 TPM powered-on hours",
+    "probes": [
+      {
+        "platform": "Windows",
+        "processor": "cpu",
+        "status": "passed",
+        "generationTokens": 64,
+        "embeddingVectors": 8,
+        "embeddingDimensions": 1024,
+        "gpuOffload": false,
+        "observedOpenMPModules": 0
+      },
+      {
+        "platform": "Windows",
+        "processor": "vulkan",
+        "status": "passed",
+        "generationTokens": 64,
+        "embeddingVectors": 8,
+        "embeddingDimensions": 1024,
+        "gpuOffload": true,
+        "observedOpenMPModules": 0
+      },
+      {
+        "platform": "Windows",
+        "processor": "sycl",
+        "status": "passed",
+        "generationTokens": 64,
+        "embeddingVectors": 8,
+        "embeddingDimensions": 1024,
+        "gpuOffload": true,
+        "observedOpenMPModules": 0
+      },
+      {
+        "platform": "Ubuntu",
+        "processor": "cpu",
+        "status": "passed",
+        "generationTokens": 64,
+        "embeddingVectors": 8,
+        "embeddingDimensions": 1024,
+        "gpuOffload": false,
+        "observedOpenMPModules": 0
+      },
+      {
+        "platform": "Debian13",
+        "processor": "cpu",
+        "status": "passed",
+        "generationTokens": 64,
+        "embeddingVectors": 8,
+        "embeddingDimensions": 1024,
+        "gpuOffload": false,
+        "observedOpenMPModules": 0
+      },
+      {
+        "platform": "RHEL9",
+        "processor": "cpu",
+        "status": "passed",
+        "generationTokens": 64,
+        "embeddingVectors": 8,
+        "embeddingDimensions": 1024,
+        "gpuOffload": false,
+        "observedOpenMPModules": 0
+      }
+    ],
+    "sourceTests": "focused native policy, inference manager, storage permissions, build identity, installation enforcement and Product CLI suites passed",
+    "limits": [
+      "Windows runtime probes cover one development host; no full fresh-machine MSI lifecycle run.",
+      "Ubuntu checks ran on Ubuntu 22.04 WSL; Debian 13 and RHEL 9 checks used disposable containers.",
+      "No complete TPM-backed setup, registration/renewal, upgrade/uninstall, database or production acceptance.",
+      "Container checks do not establish RHEL SELinux or universal hardware qualification.",
+      "Same-version Windows upgrades remain blocked; use a fresh separate evaluation installation."
+    ]
+  }
 }

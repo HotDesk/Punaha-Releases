@@ -2,7 +2,7 @@
 
 Official release information and installation downloads from Hot Desk Consultancy Services Limited.
 
-**Pūnaha 0.1 RC1 is being prepared. No installer release is publicly available from this repository yet.** The candidate remains a draft while redistribution and installation/registration acceptance checks are completed. A release candidate is for evaluation and acceptance testing.
+**[Pūnaha 0.1 RC1 downloads](https://github.com/HotDesk/Punaha-Releases/releases/tag/v0.1.0-rc.1-terms-v2)** are available for invited evaluation. The current packages were rebuilt on **7 October 2026** (`rebuild-20261007`); the embedded application version remains **0.1.0-rc.1**. Full installation and production acceptance remain outstanding.
 
 This repository holds release documentation. The proprietary application source is maintained separately. GitHub's automatically generated **Source code** ZIP and tar.gz contain this repository's documents, not an installer or the application source.
 
@@ -16,22 +16,21 @@ Read the complete [software licence](PUNAHA-LICENCE.md) and [privacy notice](PRI
 
 ## Registration and expiry
 
+**There is currently no facility to register a Pūnaha installation in RC1. Registration will be available in the first production version.** Export before the allowance ends; registration cannot currently restore normal use in RC1. Downloading or installing this candidate does not issue a 12-month activation.
+
 **Renew or export your data before the access cutoff.** A new installation after setup, and each expired registered term, has a **720 TPM powered-on-hour allowance**. This is not 30 calendar days, and includes time the TPM is powered on while the Product service is stopped.
 
 After the allowance ends, ordinary processing, administration, customer-data access and exports stop. Data is retained, but Product access and export remain unavailable until valid registration or renewal is restored. Only necessary sign-in, registration, renewal, activation and recovery functions remain available. Online and offline activation both require the completed registration process; submitting a request alone is insufficient.
 
-## Planned RC1 downloads
+## Current RC1 downloads
 
-| Platform | Complete download |
-|---|---|
-| Windows x64 | `punaha-0.1.0-rc.1-terms-v2-windows-amd64.zip` |
-| Ubuntu amd64 | `punaha-0.1.0-rc.1-terms-v2-ubuntu-amd64.tar.gz` |
-| Debian 13 amd64 | `punaha-0.1.0-rc.1-terms-v2-debian13-amd64.tar.gz` |
-| RHEL 9 x86_64 | `punaha-0.1.0-rc.1-terms-v2-rhel9-x86_64.tar.gz` |
+Get the complete signed Windows, Ubuntu, Debian 13 or RHEL 9 package from the [RC1 release page](https://github.com/HotDesk/Punaha-Releases/releases/tag/v0.1.0-rc.1-terms-v2). Select the files with `rebuild-20261007` in their names and use `SHA256SUMS-rebuild-20261007.txt`.
 
-The intended release tag is `v0.1.0-rc.1-terms-v2`. The embedded application version remains `0.1.0-rc.1`; `terms-v2` distinguishes this revised licence candidate. The public tag identifies these release documents; [RELEASE-INFO.json](RELEASE-INFO.json) records the separate application build identity and archive checksums.
+The public tag identifies release documentation; [RELEASE-INFO.json](RELEASE-INFO.json) records the separate private application source identity and exact archive hashes. GitHub’s automatic Source code archives are not application installers.
 
-Each archive contains its complete platform folder: installer, installation guide, registration guidance, licence, privacy notice, third-party notices and applicable supplied source, public certificates and verification helpers. Keep that folder together after extraction. The four original signed folders have not been edited to create these archives.
+Each archive contains its installer, installation guide, registration availability notice, licence, privacy notice, third-party notices and applicable source, public certificates and verification helpers. Every delivered file is covered by a signed manifest; installers, executables, download archives and checksum lists also have the signatures described in the verification guide.
+
+The Windows MSI includes the runtime permissions correction. The older repair2 bundle is not needed for this rebuild and must not be applied to it. The default program folder is `Program Files\Punaha`; the display name remains Pūnaha. Intel SYCL requires an ASCII-only Local runtime path. Use a fresh, separate evaluation installation; same-version Windows upgrades are blocked.
 
 All platforms require a usable TPM 2.0/vTPM, administrator preparation and a separately configured supported database. Windows requires 64-bit Windows 11 or Windows Server 2022 or later; Linux requires the distribution dependencies and systemd. Choose one database engine: MySQL, PostgreSQL or Microsoft SQL Server. Database servers, model files and missing OS dependencies are not bundled. Consult the platform's `INSTALL.md` for exact requirements and the remaining qualification limits.
 
