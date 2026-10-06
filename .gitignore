@@ -1,0 +1,11 @@
+*.zip
+*.tar.gz
+*.msi
+*.deb
+*.rpm
+*.exe
+*.pfx
+*.p12
+*.key
+.env
+.env.*

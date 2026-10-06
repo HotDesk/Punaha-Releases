@@ -1,0 +1,7 @@
+4581ace31a2c720718cea400019d858d53dfd7c74dc2bd41386981aed96503ce  PRIVACY.md
+15779ced3aa52e73a9fd060813244b7b513ca7dcd97f87204b9459403d121548  punaha-0.1.0-rc.1-terms-v2-debian13-amd64.tar.gz
+80b59df5099e08ad270daee8aaba5bf3a228f8e6c69b9d095fdee55163f13fd2  punaha-0.1.0-rc.1-terms-v2-rhel9-x86_64.tar.gz
+231c253e72ec6f7a8c198aa69b2a87c21aa77b175007edac4a5dff4fa21f0856  punaha-0.1.0-rc.1-terms-v2-ubuntu-amd64.tar.gz
+71ff8d133792d3a07c85b73d6a7bd239ee2c407097a7eef7d8f9e679f1050e84  punaha-0.1.0-rc.1-terms-v2-windows-amd64.zip
+8990e5a073e8e518adbbaa254f13bfcf02ee3972c7b349c045fde56b3a803115  PUNAHA-LICENCE.md
+158c778447661d03239705b4d020a9a5826f6527601d9cfcf78b7992befd8c63  RELEASE-INFO.json

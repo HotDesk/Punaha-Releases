@@ -1,0 +1,62 @@
+{
+  "schema": "punaha-release-downloads/v1",
+  "releaseTag": "v0.1.0-rc.1-terms-v2",
+  "productVersion": "0.1.0-rc.1",
+  "candidateRevision": "terms-v2",
+  "legalVersion": "rc1-20261006-v2",
+  "privacyVersion": "rc1-20261006-v1",
+  "productSourceCommit": "decfd63165046095b38c2062725a89edd268ab35",
+  "supportSourceCommit": "21a8352e1bb86980a46739159bb3633026238685",
+  "supportDeploymentAccepted": false,
+  "statusAtPreparation": "draft; public distribution blocked pending redistribution and release acceptance",
+  "preparedAtUtc": "2026-10-06T01:49:04.405741+00:00",
+  "archivePolicy": "Complete platform folder; original file bytes unchanged; archive names identify distro and legal revision.",
+  "tagScope": "The public repository tag identifies release documentation, not the private application source commit.",
+  "authentication": "Archives and SHA256SUMS are not separately signed. Each archive contains an RSA-SHA256 signed manifest covering every other inner file.",
+  "assets": [
+    {
+      "platform": "Windows",
+      "name": "punaha-0.1.0-rc.1-terms-v2-windows-amd64.zip",
+      "size": 268114088,
+      "sha256": "71ff8d133792d3a07c85b73d6a7bd239ee2c407097a7eef7d8f9e679f1050e84",
+      "manifestSha256": "6ba1740ec5225aac1771a8df931c84ffa3e34b52f31cfae8ad85ea0da677075c",
+      "signedFilesVerified": 2842,
+      "totalFiles": 2844,
+      "signedManifestVerified": true,
+      "exactArchiveInventoryVerified": true
+    },
+    {
+      "platform": "Ubuntu",
+      "name": "punaha-0.1.0-rc.1-terms-v2-ubuntu-amd64.tar.gz",
+      "size": 146709960,
+      "sha256": "231c253e72ec6f7a8c198aa69b2a87c21aa77b175007edac4a5dff4fa21f0856",
+      "manifestSha256": "910bc47e50031a088d256e7a46e4ca4b13c387f2fbdd771f45ac0079169fb5c9",
+      "signedFilesVerified": 2842,
+      "totalFiles": 2844,
+      "signedManifestVerified": true,
+      "exactArchiveInventoryVerified": true
+    },
+    {
+      "platform": "Debian13",
+      "name": "punaha-0.1.0-rc.1-terms-v2-debian13-amd64.tar.gz",
+      "size": 146707057,
+      "sha256": "15779ced3aa52e73a9fd060813244b7b513ca7dcd97f87204b9459403d121548",
+      "manifestSha256": "10c8858fc4718227a7f8acd5414a58b076276435fb9c69f2c8c61f01d722cf8f",
+      "signedFilesVerified": 2842,
+      "totalFiles": 2844,
+      "signedManifestVerified": true,
+      "exactArchiveInventoryVerified": true
+    },
+    {
+      "platform": "RHEL9",
+      "name": "punaha-0.1.0-rc.1-terms-v2-rhel9-x86_64.tar.gz",
+      "size": 166268119,
+      "sha256": "80b59df5099e08ad270daee8aaba5bf3a228f8e6c69b9d095fdee55163f13fd2",
+      "manifestSha256": "b7e349eedf2dd8e0b97cdcd828330e02dec223d16610306aaf3553faef10fd14",
+      "signedFilesVerified": 2842,
+      "totalFiles": 2844,
+      "signedManifestVerified": true,
+      "exactArchiveInventoryVerified": true
+    }
+  ]
+}
