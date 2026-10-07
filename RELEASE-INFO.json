@@ -2,12 +2,12 @@
   "schema": "punaha-release-downloads/v2",
   "releaseTag": "v0.1.0-rc.1-terms-v2",
   "productVersion": "0.1.0-rc.1",
-  "candidateRevision": "rebuild-20261007",
+  "candidateRevision": "browser-20261007",
   "legalVersion": "rc1-20261006-v2",
   "privacyVersion": "rc1-20261006-v1",
-  "productSourceCommit": "b7491731373a210528a3719b8b5f86648e108868",
+  "productSourceCommit": "8207efe211b0303a65068594c640aa2746679872",
   "status": "signed evaluation candidate; package and runtime checks passed; full installation lifecycle and production acceptance outstanding",
-  "preparedAtUtc": "2026-10-06T23:06:35.1871190Z",
+  "preparedAtUtc": "2026-10-07T00:30:39.6612427Z",
   "registrationAvailableInRC1": false,
   "registrationAvailability": "first production version",
   "allowance": "720 TPM powered-on hours after first-time setup",
@@ -19,38 +19,38 @@
   "assets": [
     {
       "platform": "Windows",
-      "name": "punaha-0.1.0-rc.1-rebuild-20261007-windows-amd64.zip",
-      "size": 247138278,
-      "sha256": "9ad8bab4cb0e63df7f0d90acac47df9037a13284002a4ee7b143c16809174485",
+      "name": "punaha-0.1.0-rc.1-browser-20261007-windows-amd64.zip",
+      "size": 247012674,
+      "sha256": "0ab5d345b080968f5d916cc3b8c58c77b4af76e74cab5894e49da7cccb8d10f7",
       "files": 2853
     },
     {
       "platform": "Ubuntu",
-      "name": "punaha-0.1.0-rc.1-rebuild-20261007-ubuntu-amd64.tar.gz",
-      "size": 148602644,
-      "sha256": "8450f7555e86349630bf1be93b0b5b705809d6a5c490b742912bbd7d7faeb631",
+      "name": "punaha-0.1.0-rc.1-browser-20261007-ubuntu-amd64.tar.gz",
+      "size": 148492665,
+      "sha256": "cb5143825f16c9e976b1c9b3253c5142469598aaee24dec4c96d71595224d0f4",
       "files": 2853
     },
     {
       "platform": "Debian13",
-      "name": "punaha-0.1.0-rc.1-rebuild-20261007-debian13-amd64.tar.gz",
-      "size": 148597283,
-      "sha256": "d1b9222b08e0eefb35d68142e1b1663685fbb8253705e8e430ebd248a5aae693",
+      "name": "punaha-0.1.0-rc.1-browser-20261007-debian13-amd64.tar.gz",
+      "size": 148491899,
+      "sha256": "3fe290c5f9ba7c29854efaa78d4ce805ce00a96d26bae504308c13dc2ddb987e",
       "files": 2853
     },
     {
       "platform": "RHEL9",
-      "name": "punaha-0.1.0-rc.1-rebuild-20261007-rhel9-x86_64.tar.gz",
-      "size": 168179933,
-      "sha256": "5e776475ee463c115337ce89cf18306172821e4507f59b8ceac1e08eb9912166",
+      "name": "punaha-0.1.0-rc.1-browser-20261007-rhel9-x86_64.tar.gz",
+      "size": 168069893,
+      "sha256": "95826ecacd9b4c0c71c29ab9f50de84b887d415e427617c9c93391fb85708a85",
       "files": 2853
     }
   ],
   "validation": {
     "schema": "punaha-rc1-rebuild-validation/v1",
-    "candidateRevision": "rebuild-20261007",
+    "candidateRevision": "browser-20261007",
     "productVersion": "0.1.0-rc.1",
-    "sourceCommit": "b7491731373a210528a3719b8b5f86648e108868",
+    "sourceCommit": "8207efe211b0303a65068594c640aa2746679872",
     "date": "2026-10-07",
     "status": "package-and-runtime-checks-passed",
     "windows": {
@@ -60,7 +60,9 @@
       "installerHelperMatchesSignedBuild": true,
       "runtimePermissionCandidateAndExtractedGates": "passed",
       "defaultProgramDirectory": "Program Files/Punaha",
-      "intelSYCLRuntimePath": "ASCII-only; unsupported paths rejected before native loading"
+      "intelSYCLRuntimePath": "ASCII-only; unsupported paths rejected before native loading",
+      "defenderScan": "final signed executable: no threats found",
+      "embeddingGemmaProbe": "packaged CPU executable: four 768-dimensional vectors produced"
     },
     "linux": {
       "payloadInventories": "RSA-SHA256 authenticated; extracted bytes and POSIX modes verified",
@@ -144,6 +146,27 @@
       "No complete TPM-backed setup, registration/renewal, upgrade/uninstall, database or production acceptance.",
       "Container checks do not establish RHEL SELinux or universal hardware qualification.",
       "Same-version Windows upgrades remain blocked; use a fresh separate evaluation installation."
-    ]
+    ],
+    "browserProtection": {
+      "method": "minification-and-local-identifier-mangling",
+      "tool": "terser@5.51.2",
+      "revision": "eaa8f6d70e98aa6d621a",
+      "scripts": 22,
+      "sourceMaps": false,
+      "sourceBytes": 1705325,
+      "protectedBytes": 1166753,
+      "embeddedBytesVerified": true,
+      "readableSourceScriptsAbsent": true,
+      "frontendRegressionTests": 243,
+      "registrationCutoffTests": 4,
+      "browserChecks": [
+        "Protected shell and lazy authentication page render and submit with strict script CSP",
+        "All 20 protected lazy page modules register against the actual protected application API",
+        "Mobile sign-in remains usable",
+        "Protected first-run setup recovery page renders",
+        "All loaded scripts use the current cache revision; no browser exceptions"
+      ],
+      "additionalKnowledgePageCheck": "protected code: saved knowledge and model-discovery failure remain usable"
+    }
   }
 }

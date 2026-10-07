@@ -2,7 +2,7 @@
 
 Official release information and installation downloads from Hot Desk Consultancy Services Limited.
 
-**[Pūnaha 0.1 RC1 downloads](https://github.com/HotDesk/Punaha-Releases/releases/tag/v0.1.0-rc.1-terms-v2)** are available for invited evaluation. The current packages were rebuilt on **7 October 2026** (`rebuild-20261007`); the embedded application version remains **0.1.0-rc.1**. Full installation and production acceptance remain outstanding.
+**[Pūnaha 0.1 RC1 downloads](https://github.com/HotDesk/Punaha-Releases/releases/tag/v0.1.0-rc.1-terms-v2)** are available for invited evaluation. The current packages were rebuilt on **7 October 2026** (`browser-20261007`); the embedded application version remains **0.1.0-rc.1**. The browser JavaScript is now minified with internal identifier mangling and no source maps. Full installation and production acceptance remain outstanding.
 
 This repository holds release documentation. The proprietary application source is maintained separately. GitHub's automatically generated **Source code** ZIP and tar.gz contain this repository's documents, not an installer or the application source.
 
@@ -24,7 +24,7 @@ After the allowance ends, ordinary processing, administration, customer-data acc
 
 ## Current RC1 downloads
 
-Get the complete signed Windows, Ubuntu, Debian 13 or RHEL 9 package from the [RC1 release page](https://github.com/HotDesk/Punaha-Releases/releases/tag/v0.1.0-rc.1-terms-v2). Select the files with `rebuild-20261007` in their names and use `SHA256SUMS-rebuild-20261007.txt`.
+Get the complete signed Windows, Ubuntu, Debian 13 or RHEL 9 package from the [RC1 release page](https://github.com/HotDesk/Punaha-Releases/releases/tag/v0.1.0-rc.1-terms-v2). Select the files with `browser-20261007` in their names and use `SHA256SUMS-browser-20261007.txt`.
 
 The public tag identifies release documentation; [RELEASE-INFO.json](RELEASE-INFO.json) records the separate private application source identity and exact archive hashes. GitHub’s automatic Source code archives are not application installers.
 

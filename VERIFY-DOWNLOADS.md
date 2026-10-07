@@ -1,21 +1,21 @@
 # Verify a Pūnaha download
 
-Use these instructions for the RC1 `rebuild-20261007` downloads from the official release page. These are evaluation packages; signature verification does not establish production acceptance.
+Use these instructions for the RC1 `browser-20261007` downloads from the official release page. These are evaluation packages; signature verification does not establish production acceptance.
 
 ## 1. Select the complete platform archive
 
-Obtain the appropriate named installer archive and `SHA256SUMS-rebuild-20261007.txt` from the same official release in `HotDesk/Punaha-Releases`. Do not select GitHub's automatic **Source code** archives: they contain release documentation only.
+Obtain the appropriate named installer archive and `SHA256SUMS-browser-20261007.txt` from the same official release in `HotDesk/Punaha-Releases`. Do not select GitHub's automatic **Source code** archives: they contain release documentation only.
 
 On Windows, calculate the ZIP hash:
 
 ```powershell
-Get-FileHash -LiteralPath .\punaha-0.1.0-rc.1-rebuild-20261007-windows-amd64.zip -Algorithm SHA256
+Get-FileHash -LiteralPath .\punaha-0.1.0-rc.1-browser-20261007-windows-amd64.zip -Algorithm SHA256
 ```
 
-Compare every hexadecimal character with the matching line in `SHA256SUMS-rebuild-20261007.txt`. On Linux, from the directory containing the selected archive and checksums, use:
+Compare every hexadecimal character with the matching line in `SHA256SUMS-browser-20261007.txt`. On Linux, from the directory containing the selected archive and checksums, use:
 
 ```bash
-sha256sum --check --ignore-missing SHA256SUMS-rebuild-20261007.txt
+sha256sum --check --ignore-missing SHA256SUMS-browser-20261007.txt
 ```
 
 Confirm that your downloaded archive is listed as `OK`. Files for other platforms may be absent. A checksum mismatch means that the download must not be installed.
