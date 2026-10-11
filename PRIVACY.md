@@ -1,10 +1,10 @@
-# Pūnaha Product and Support privacy notice
+# Punaha Product and Support privacy notice
 
-Version: rc1-20261006-v1 | 6 October 2026
+Version: rc1-20261012-v1 | 12 October 2026
 
 ## Who handles information
 
-Hot Desk Consultancy Services Limited, Wellington, New Zealand, provides Pūnaha and handles the registration and Support information described here. Contact privacy@punaha.com about access, correction or a privacy concern. We may need to verify your identity before disclosing or changing information. You may also contact New Zealand's Office of the Privacy Commissioner at https://www.privacy.org.nz/.
+Hot Desk Consultancy Services Limited, Wellington, New Zealand, provides Punaha and handles the registration and Support information described here. Contact privacy@punaha.com about access, correction or a privacy concern. We may need to verify your identity before disclosing or changing information. You may also contact New Zealand's Office of the Privacy Commissioner at https://www.privacy.org.nz/.
 
 The operator of a customer-hosted installation controls its local accounts, databases, content, logs, integrations and backups. If an organisation operates the installation you use, contact that organisation about its handling of your information. This notice does not replace its own privacy obligations. The public marketing website has a separate notice at https://punaha.com/privacy.
 
@@ -34,7 +34,7 @@ The inspected Support build is a development runtime: verification and invitatio
 
 ## Recipients and locations
 
-Authorised customer administrators and authorised Pūnaha staff can access information for their assigned tasks. Configured hosting, database, email, identity and payment providers may process the information needed to provide their services. The customer chooses providers used by its Product installation. Information sent to external services may be processed outside New Zealand or the customer's location according to those services and the deployment arrangements. Production Support provider locations must be communicated as part of production onboarding; this candidate does not promise a particular hosting country.
+Authorised customer administrators and authorised Punaha staff can access information for their assigned tasks. Configured hosting, database, email, identity and payment providers may process the information needed to provide their services. The customer chooses providers used by its Product installation. Information sent to external services may be processed outside New Zealand or the customer's location according to those services and the deployment arrangements. Production Support provider locations must be communicated as part of production onboarding; this candidate does not promise a particular hosting country.
 
 If another administrator invites you or supplies your information, it may come from that administrator rather than directly from you. We use it for the stated account, registration or service purpose. Do not supply another person's information without appropriate authority and notice.
 

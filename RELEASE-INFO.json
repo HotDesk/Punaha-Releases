@@ -2,12 +2,12 @@
   "schema": "punaha-release-downloads/v2",
   "releaseTag": "v0.1.0-rc.1-terms-v2",
   "productVersion": "0.1.0-rc.1",
-  "candidateRevision": "browser-20261007",
-  "legalVersion": "rc1-20261006-v2",
-  "privacyVersion": "rc1-20261006-v1",
-  "productSourceCommit": "8207efe211b0303a65068594c640aa2746679872",
-  "status": "signed evaluation candidate; package and runtime checks passed; full installation lifecycle and production acceptance outstanding",
-  "preparedAtUtc": "2026-10-07T00:30:39.6612427Z",
+  "candidateRevision": "rebuild-20261012",
+  "legalVersion": "rc1-20261012-v1",
+  "privacyVersion": "rc1-20261012-v1",
+  "productSourceCommit": "2f6774f212e10c0f32f01be073f3f0cbe03382d7",
+  "status": "signed evaluation candidate; Windows installation lifecycle and Linux package/runtime checks passed; database-backed and production acceptance outstanding",
+  "preparedAtUtc": "2026-10-11T23:00:32.9064986Z",
   "registrationAvailableInRC1": false,
   "registrationAvailability": "first production version",
   "allowance": "720 TPM powered-on hours after first-time setup",
@@ -19,154 +19,233 @@
   "assets": [
     {
       "platform": "Windows",
-      "name": "punaha-0.1.0-rc.1-browser-20261007-windows-amd64.zip",
-      "size": 247012674,
-      "sha256": "0ab5d345b080968f5d916cc3b8c58c77b4af76e74cab5894e49da7cccb8d10f7",
-      "files": 2853
+      "name": "punaha-0.1.0-rc.1-rebuild-20261012-windows-amd64.zip",
+      "size": 247079661,
+      "sha256": "86b84ff36768f89ea5a3dd539e16c1dac125d24afb938ece1e5c231212265e82",
+      "files": 2854
     },
     {
       "platform": "Ubuntu",
-      "name": "punaha-0.1.0-rc.1-browser-20261007-ubuntu-amd64.tar.gz",
-      "size": 148492665,
-      "sha256": "cb5143825f16c9e976b1c9b3253c5142469598aaee24dec4c96d71595224d0f4",
+      "name": "punaha-0.1.0-rc.1-rebuild-20261012-ubuntu-amd64.tar.gz",
+      "size": 148574702,
+      "sha256": "0eb7ed166ebdb92668c6d65256ca875ff794c7760578c025d1da313a21b45448",
       "files": 2853
     },
     {
       "platform": "Debian13",
-      "name": "punaha-0.1.0-rc.1-browser-20261007-debian13-amd64.tar.gz",
-      "size": 148491899,
-      "sha256": "3fe290c5f9ba7c29854efaa78d4ce805ce00a96d26bae504308c13dc2ddb987e",
+      "name": "punaha-0.1.0-rc.1-rebuild-20261012-debian13-amd64.tar.gz",
+      "size": 148577515,
+      "sha256": "67bcb3e8720c98d286499d8915dde5b4eb2aa2e676c0e554bd431c8442b1fc4b",
       "files": 2853
     },
     {
       "platform": "RHEL9",
-      "name": "punaha-0.1.0-rc.1-browser-20261007-rhel9-x86_64.tar.gz",
-      "size": 168069893,
-      "sha256": "95826ecacd9b4c0c71c29ab9f50de84b887d415e427617c9c93391fb85708a85",
+      "name": "punaha-0.1.0-rc.1-rebuild-20261012-rhel9-x86_64.tar.gz",
+      "size": 168144344,
+      "sha256": "7afb4fab96c4d52a75e2890f5cf5522687eee553e7b523be168ed2d3819630e3",
       "files": 2853
     }
   ],
   "validation": {
-    "schema": "punaha-rc1-rebuild-validation/v1",
-    "candidateRevision": "browser-20261007",
-    "productVersion": "0.1.0-rc.1",
-    "sourceCommit": "8207efe211b0303a65068594c640aa2746679872",
-    "date": "2026-10-07",
-    "status": "package-and-runtime-checks-passed",
-    "windows": {
-      "signedPayloadFiles": 2943,
-      "independentlyVerifiedPublisherPEAndMSIFiles": 75,
-      "validVendorComponents": 25,
-      "installerHelperMatchesSignedBuild": true,
-      "runtimePermissionCandidateAndExtractedGates": "passed",
-      "defaultProgramDirectory": "Program Files/Punaha",
-      "intelSYCLRuntimePath": "ASCII-only; unsupported paths rejected before native loading",
-      "defenderScan": "final signed executable: no threats found",
-      "embeddingGemmaProbe": "packaged CPU executable: four 768-dimensional vectors produced"
+    "Ubuntu": {
+      "schema": "punaha-release-validation/v1",
+      "createdAtUtc": "2026-10-12T11:57:06.897622+13:00",
+      "productVersion": "0.1.0-rc.1",
+      "sourceCommit": "2f6774f212e10c0f32f01be073f3f0cbe03382d7",
+      "platform": "Ubuntu",
+      "distributionRevision": "rebuild-20261012",
+      "identity": {
+        "productVersion": "0.1.0-rc.1",
+        "productBuild": "rc1-rebuild-20261012-ubuntu",
+        "commit": "2f6774f212e10c0f32f01be073f3f0cbe03382d7",
+        "builtAt": "2026-10-11T22:46:30Z",
+        "sourceModified": false,
+        "goVersion": "go1.26.5",
+        "operatingSystem": "linux",
+        "architecture": "amd64"
+      },
+      "packageSHA256": "cb9f88c09ad93e40e20c109fac9a6e73076a8ef3805e5e4fde213dbc462413c7",
+      "executableSHA256": "c358eed9db7658ebc34090ae82ddd28ea47abcd0ea8dd59dd63f4ed76ea5a498",
+      "status": "passed-package-and-cpu-runtime-checks",
+      "environment": "Ubuntu 22.04 WSL",
+      "sourceTestPackagesPassed": 9,
+      "packageSignature": "detached RSA SHA-256 verified against pinned public certificate",
+      "payloadInventory": "exact file hashes, modes and signed inventory verified",
+      "nativeLibraries": "all packaged inference shared libraries passed linkage and loading checks",
+      "licenceAcceptance": "current document, helper and package-script hashes match; obsolete receipt rejected and current receipt accepted",
+      "installationRejection": "acceptance helper checked without installing on the build host",
+      "cpuSmoke": {
+        "passed": true,
+        "processingModel": "Qwen3-0.6B-Q8_0",
+        "embeddingModel": "Qwen3-Embedding-0.6B-Q8_0",
+        "completionTokens": 64,
+        "embeddingVectors": 8,
+        "embeddingDimensions": 1024
+      },
+      "limitations": [
+        "Full TPM-backed Linux installation and service lifecycle not completed.",
+        "Database-backed setup and authenticated browser model/chat not accepted by this run.",
+        "CPU tests used the stated small Qwen fixtures; no Linux Gemma or GPU acceptance claim.",
+        "Same-version in-place upgrade, rollback and production acceptance remain outstanding."
+      ]
     },
-    "linux": {
-      "payloadInventories": "RSA-SHA256 authenticated; extracted bytes and POSIX modes verified",
-      "packageSignatures": "detached RSA-SHA256",
-      "nativeRPMSignature": false,
-      "dependencyChecks": "package relationships resolve on tested environments; Ubuntu tpm-udev must be installed or cached before offline installation",
-      "debianAndRhelMissingAcceptanceAndTPMRejection": "passed"
+    "Debian13": {
+      "schema": "punaha-release-validation/v1",
+      "createdAtUtc": "2026-10-12T11:57:07.032341+13:00",
+      "productVersion": "0.1.0-rc.1",
+      "sourceCommit": "2f6774f212e10c0f32f01be073f3f0cbe03382d7",
+      "platform": "Debian13",
+      "distributionRevision": "rebuild-20261012",
+      "identity": {
+        "productVersion": "0.1.0-rc.1",
+        "productBuild": "rc1-rebuild-20261012-ubuntu",
+        "commit": "2f6774f212e10c0f32f01be073f3f0cbe03382d7",
+        "builtAt": "2026-10-11T22:46:30Z",
+        "sourceModified": false,
+        "goVersion": "go1.26.5",
+        "operatingSystem": "linux",
+        "architecture": "amd64"
+      },
+      "packageSHA256": "64c00369bc22328cfd544415a3e7cac61aa3244aff81902bf910dc3890b4f014",
+      "executableSHA256": "c358eed9db7658ebc34090ae82ddd28ea47abcd0ea8dd59dd63f4ed76ea5a498",
+      "status": "passed-package-and-cpu-runtime-checks",
+      "environment": "Debian 13 container",
+      "sourceTestPackagesPassed": 9,
+      "packageSignature": "detached RSA SHA-256 verified against pinned public certificate",
+      "payloadInventory": "exact file hashes, modes and signed inventory verified",
+      "nativeLibraries": "all packaged inference shared libraries passed linkage and loading checks",
+      "licenceAcceptance": "current document, helper and package-script hashes match; obsolete receipt rejected and current receipt accepted",
+      "installationRejection": "missing acceptance and missing TPM rejected without installed application",
+      "cpuSmoke": {
+        "passed": true,
+        "processingModel": "Qwen3-0.6B-Q8_0",
+        "embeddingModel": "Qwen3-Embedding-0.6B-Q8_0",
+        "completionTokens": 64,
+        "embeddingVectors": 8,
+        "embeddingDimensions": 1024
+      },
+      "limitations": [
+        "Full TPM-backed Linux installation and service lifecycle not completed.",
+        "Database-backed setup and authenticated browser model/chat not accepted by this run.",
+        "CPU tests used the stated small Qwen fixtures; no Linux Gemma or GPU acceptance claim.",
+        "Same-version in-place upgrade, rollback and production acceptance remain outstanding."
+      ]
     },
-    "nativeDependencyPolicy": "passed for packaged inference and embedded vector runtimes",
-    "thirdPartyNoticeHashEntries": 1213,
-    "licenceSHA256": "8990e5a073e8e518adbbaa254f13bfcf02ee3972c7b349c045fde56b3a803115",
-    "privacySHA256": "4581ace31a2c720718cea400019d858d53dfd7c74dc2bd41386981aed96503ce",
-    "registrationAvailableInRC1": false,
-    "normalUseAllowance": "720 TPM powered-on hours",
-    "probes": [
-      {
-        "platform": "Windows",
-        "processor": "cpu",
-        "status": "passed",
-        "generationTokens": 64,
-        "embeddingVectors": 8,
-        "embeddingDimensions": 1024,
-        "gpuOffload": false,
-        "observedOpenMPModules": 0
+    "RHEL9": {
+      "schema": "punaha-release-validation/v1",
+      "createdAtUtc": "2026-10-12T11:57:07.161856+13:00",
+      "productVersion": "0.1.0-rc.1",
+      "sourceCommit": "2f6774f212e10c0f32f01be073f3f0cbe03382d7",
+      "platform": "RHEL9",
+      "distributionRevision": "rebuild-20261012",
+      "identity": {
+        "productVersion": "0.1.0-rc.1",
+        "productBuild": "rc1-rebuild-20261012-rhel9",
+        "commit": "2f6774f212e10c0f32f01be073f3f0cbe03382d7",
+        "builtAt": "2026-10-11T22:46:30Z",
+        "sourceModified": false,
+        "goVersion": "go1.26.5",
+        "operatingSystem": "linux",
+        "architecture": "amd64"
       },
-      {
-        "platform": "Windows",
-        "processor": "vulkan",
-        "status": "passed",
-        "generationTokens": 64,
+      "packageSHA256": "2162984f5bf9a327c56921f84760acb113a1cb1ab46ca678d03b1f089280ccd4",
+      "executableSHA256": "8fe21af90174fff8951660d4341e71bf3331fd009514cd461473437023ac2711",
+      "status": "passed-package-and-cpu-runtime-checks",
+      "environment": "RHEL 9 compatible UBI 9 container",
+      "sourceTestPackagesPassed": 9,
+      "packageSignature": "detached RSA SHA-256 verified against pinned public certificate",
+      "payloadInventory": "exact file hashes, modes and signed inventory verified",
+      "nativeLibraries": "all packaged inference shared libraries passed linkage and loading checks",
+      "licenceAcceptance": "current document, helper and package-script hashes match; obsolete receipt rejected and current receipt accepted",
+      "installationRejection": "missing acceptance and missing TPM rejected without installed application",
+      "cpuSmoke": {
+        "passed": true,
+        "processingModel": "Qwen3-0.6B-Q8_0",
+        "embeddingModel": "Qwen3-Embedding-0.6B-Q8_0",
+        "completionTokens": 64,
         "embeddingVectors": 8,
-        "embeddingDimensions": 1024,
-        "gpuOffload": true,
-        "observedOpenMPModules": 0
+        "embeddingDimensions": 1024
       },
-      {
-        "platform": "Windows",
-        "processor": "sycl",
-        "status": "passed",
-        "generationTokens": 64,
-        "embeddingVectors": 8,
-        "embeddingDimensions": 1024,
-        "gpuOffload": true,
-        "observedOpenMPModules": 0
+      "limitations": [
+        "Full TPM-backed Linux installation and service lifecycle not completed.",
+        "Database-backed setup and authenticated browser model/chat not accepted by this run.",
+        "CPU tests used the stated small Qwen fixtures; no Linux Gemma or GPU acceptance claim.",
+        "Same-version in-place upgrade, rollback and production acceptance remain outstanding."
+      ]
+    },
+    "Windows": {
+      "schema": "punaha-private-validation/v1",
+      "createdAtUtc": "2026-10-11T22:00:15.67228Z",
+      "identity": {
+        "productVersion": "0.1.0-rc.1",
+        "productBuild": "rc1-windows-path-fix-20261012",
+        "commit": "2f6774f212e10c0f32f01be073f3f0cbe03382d7",
+        "builtAt": "2026-10-11T21:43:41Z",
+        "sourceModified": false,
+        "goVersion": "go1.26.5",
+        "operatingSystem": "windows",
+        "architecture": "amd64"
       },
-      {
-        "platform": "Ubuntu",
-        "processor": "cpu",
-        "status": "passed",
-        "generationTokens": 64,
-        "embeddingVectors": 8,
-        "embeddingDimensions": 1024,
-        "gpuOffload": false,
-        "observedOpenMPModules": 0
+      "packageSHA256": "65abc65dafc57e4e46d3244c4257d90eb646bf6555c7aa9cb22eeac697fb6d51",
+      "executableSHA256": "d5cdbf29fb0bf56f29a19059f2edeb46af8242f90d5f387907d517d31e4c3176",
+      "status": "passed-isolated-windows-package-lifecycle",
+      "sourceTests": {
+        "regression": "Original Windows path mismatch reproduced; corrected defaults pass",
+        "protectedBuildPassed": 2,
+        "backendPackagesPassed": [
+          "storagepaths",
+          "punaha command",
+          "frontend",
+          "installation",
+          "servicehost",
+          "installconfig",
+          "setupapi",
+          "licensing",
+          "llamacpp",
+          "httpapi"
+        ],
+        "frontendPassed": 246
       },
-      {
-        "platform": "Debian13",
-        "processor": "cpu",
-        "status": "passed",
-        "generationTokens": 64,
-        "embeddingVectors": 8,
-        "embeddingDimensions": 1024,
-        "gpuOffload": false,
-        "observedOpenMPModules": 0
+      "windowsPackage": {
+        "freshInstall": "passed",
+        "firstTimeSetup": "passed",
+        "reinstall": "passed",
+        "repair": "passed",
+        "restart": "passed",
+        "signatureVerification": {
+          "status": "passed",
+          "publisherPEAndMSIFiles": 74,
+          "authenticode": "valid against pinned publisher certificate",
+          "timestamps": "verified against system TSA trust"
+        },
+        "payload": {
+          "productVersion": "0.1.0-rc.1",
+          "payloadEntries": 2943,
+          "publisherComponents": 72,
+          "validVendorComponents": 25,
+          "identity": {
+            "productVersion": "0.1.0-rc.1",
+            "productBuild": "rc1-windows-path-fix-20261012",
+            "commit": "2f6774f212e10c0f32f01be073f3f0cbe03382d7",
+            "builtAt": "2026-10-11T21:43:41Z",
+            "sourceModified": false,
+            "goVersion": "go1.26.5",
+            "operatingSystem": "windows",
+            "architecture": "amd64"
+          },
+          "status": "payload inventory and signature metadata verified; independent publisher verification separate"
+        },
+        "brandingAndCurrentDocuments": "passed",
+        "uninstall": "passed"
       },
-      {
-        "platform": "RHEL9",
-        "processor": "cpu",
-        "status": "passed",
-        "generationTokens": 64,
-        "embeddingVectors": 8,
-        "embeddingDimensions": 1024,
-        "gpuOffload": false,
-        "observedOpenMPModules": 0
-      }
-    ],
-    "sourceTests": "focused native policy, inference manager, storage permissions, build identity, installation enforcement and Product CLI suites passed",
-    "limits": [
-      "Windows runtime probes cover one development host; no full fresh-machine MSI lifecycle run.",
-      "Ubuntu checks ran on Ubuntu 22.04 WSL; Debian 13 and RHEL 9 checks used disposable containers.",
-      "No complete TPM-backed setup, registration/renewal, upgrade/uninstall, database or production acceptance.",
-      "Container checks do not establish RHEL SELinux or universal hardware qualification.",
-      "Same-version Windows upgrades remain blocked; use a fresh separate evaluation installation."
-    ],
-    "browserProtection": {
-      "method": "minification-and-local-identifier-mangling",
-      "tool": "terser@5.51.2",
-      "revision": "eaa8f6d70e98aa6d621a",
-      "scripts": 22,
-      "sourceMaps": false,
-      "sourceBytes": 1705325,
-      "protectedBytes": 1166753,
-      "embeddedBytesVerified": true,
-      "readableSourceScriptsAbsent": true,
-      "frontendRegressionTests": 243,
-      "registrationCutoffTests": 4,
-      "browserChecks": [
-        "Protected shell and lazy authentication page render and submit with strict script CSP",
-        "All 20 protected lazy page modules register against the actual protected application API",
-        "Mobile sign-in remains usable",
-        "Protected first-run setup recovery page renders",
-        "All loaded scripts use the current cache revision; no browser exceptions"
+      "limitations": [
+        "Disconnected Windows Server 2025 VM, first-time setup only",
+        "Database-backed setup and authenticated model/chat not accepted by this run",
+        "Earlier GPU results concern the previous binary; no new GPU acceptance claim",
+        "No in-place upgrade or live installation acceptance"
       ],
-      "additionalKnowledgePageCheck": "protected code: saved knowledge and model-discovery failure remain usable"
+      "distributionRevision": "rebuild-20261012",
+      "distributionNote": "Installation guide and release notes updated; tested MSI and executable bytes retained."
     }
   }
 }

@@ -1,14 +1,14 @@
-# Pūnaha Software Licence Agreement
+# Punaha Software Licence Agreement
 
-Version: rc1-20261006-v2
+Version: rc1-20261012-v1
 
 ## 1. Parties and acceptance
 
-This agreement is between Hot Desk Consultancy Services Limited, Wellington, New Zealand ("Pūnaha", "we" or "us"), and the individual or organisation using the software ("you"). Accept it for yourself, or only if you have authority to bind the organisation you identify. Installation acceptance and the later registration acceptance are recorded separately. Keep a copy of the version you accept.
+This agreement is between Hot Desk Consultancy Services Limited, Wellington, New Zealand ("Punaha", "we" or "us"), and the individual or organisation using the software ("you"). Accept it for yourself, or only if you have authority to bind the organisation you identify. Installation acceptance and the later registration acceptance are recorded separately. Keep a copy of the version you accept.
 
 ## 2. Proprietary software and the current offer
 
-We grant you a non-exclusive licence to install and use the Pūnaha software for lawful personal, educational, non-commercial or commercial purposes. This is one full proprietary product, not a trial. The current offer is **US$0 for the issued 12-month licence term**, starting on the signed activation's stated issue date. You may use multiple versions and create multiple independently registered installations under this offer. This permission does not require or imply that different versions can safely share the same program files or databases.
+We grant you a non-exclusive licence to install and use the Punaha software for lawful personal, educational, non-commercial or commercial purposes. This is one full proprietary product, not a trial. The current offer is **US$0 for the issued 12-month licence term**, starting on the signed activation's stated issue date. You may use multiple versions and create multiple independently registered installations under this offer. This permission does not require or imply that different versions can safely share the same program files or databases.
 
 Each independent installation must be registered. A registered installation can include its approved cluster nodes. Versions and nodes remain subject to technical compatibility, security and registration requirements; they are not paid software tiers. Optional paid support is governed by separate terms and is not required to use, register, activate or renew the software.
 
@@ -38,7 +38,7 @@ You control your installation, infrastructure, integrations, access, backups, se
 
 ## 6. Software ownership and permitted configuration
 
-Pūnaha and its licensors retain ownership of their software and intellectual property. You may use documented configuration, extension and integration features. You must not bypass registration or security protections, misrepresent a modified binary as our release, or remove proprietary notices. Reverse engineering or other acts permitted by mandatory law remain permitted to that extent.
+Punaha and its licensors retain ownership of their software and intellectual property. You may use documented configuration, extension and integration features. You must not bypass registration or security protections, misrepresent a modified binary as our release, or remove proprietary notices. Reverse engineering or other acts permitted by mandatory law remain permitted to that extent.
 
 You must not sell, sublicense or redistribute our proprietary software to others without our written permission. This does not limit the separate rights you have in third-party components, your own content or your own work.
 
